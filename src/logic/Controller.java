@@ -44,12 +44,11 @@ public class Controller{
 		}
 		if(!"=".equals(value)) 
 		{
-			if(!operator.isEmpty())
-				if(value.equals("C")) {
-					result.setText("");
-					this.num1 = 0;
-					operator="";
-				}
+			if(!operator.isEmpty() && value.equals("C"){
+                result.setText("");
+                this.num1 = 0;
+                operator="";
+            }
 			operator = value;
 			num1 = Float.parseFloat(result.getText());
 			result.setText("");
