@@ -1,0 +1,11 @@
+language: java
+jdk:
+   - openjdk11
+
+addons:
+ sonarcloud:
+  organization: bonjon
+  token: "38bdd037a2c0241708fdd0f739fb006e218f9b9c"
+script:
+- ant build
+- sonar-scanner
